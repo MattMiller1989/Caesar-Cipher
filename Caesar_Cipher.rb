@@ -1,6 +1,6 @@
 
 
-def caesar(text,shift)
+def caesar_shift(text,shift)
     
     shifted_text=""
     text.each_char {|c|
@@ -26,17 +26,13 @@ def caesar(text,shift)
                     new_val=new_val+26
                 end
                 text=text+new_val.chr
-              
+            
         end
         
         shifted_text=shifted_text+new_val.chr
     }
-   
-   return shifted_text
+puts shifted_text
+return shifted_text
     
 end
 
-
-puts caesar("Czggj, Mpwt!", 5)
-puts caesar("What a string!", 5)
-puts caesar('Mjqqt, Btwqi!', -5)
